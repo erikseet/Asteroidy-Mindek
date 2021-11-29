@@ -71,11 +71,11 @@ class Spaceship:
 
         "Otočenie doľava - A"
         if 'A' in pressed_keyboards:
-            self.rotation -= ROTATION_SPEED
+            self.rotation += ROTATION_SPEED
 
         "Otočenie doprava - D"
         if 'D' in pressed_keyboards:
-            self.rotation += ROTATION_SPEED
+            self.rotation -= ROTATION_SPEED
 
         "Ručná brzda - SHIFT"
         if 'SHIFT' in pressed_keyboards:
@@ -160,8 +160,6 @@ class Game:
 
         # Todo 2: Vytvorte Event Handler pre zmáčknuté klávesy
         # Todo Tie ktoré hráč zmačkol sa uložia do množiny pressed_keyboards
-        pass
-
     """
     Event metóda pre spracovanie klávesových výstupov
     """
