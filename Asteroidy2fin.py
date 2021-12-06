@@ -144,7 +144,7 @@ class Game:
         self.background = pyglet.sprite.Sprite(self.background_image)
         self.background.scale_x = 6
         self.background.scale_y = 4
-        self.create_asteroids(2)
+        self.create_asteroids(random.randint(1, 5))
 
     def create_asteroids(self, count):
         for i in range(count): #count per asteroid
