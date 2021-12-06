@@ -1,8 +1,8 @@
 import math
-import random
 import pyglet
 from pyglet import gl
 from pyglet.window import key
+import random
 
 "---------Globalne konštanty a premenne----------"
 
@@ -144,7 +144,7 @@ class Game:
         self.background = pyglet.sprite.Sprite(self.background_image)
         self.background.scale_x = 6
         self.background.scale_y = 4
-        self.create_asteroids(random.randint(1, 5))
+        self.create_asteroids(random.randint(1, 3))
 
     def create_asteroids(self, count):
         for i in range(count): #count per asteroid
