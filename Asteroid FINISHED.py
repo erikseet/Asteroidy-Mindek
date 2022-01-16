@@ -204,7 +204,7 @@ class Laser(SpaceObject):
 
 
 """
-GAME WINDOW CLASS
+GAME WINDOW CLASS ERIK CHABRON
 """
 
 class Game:
